@@ -25,6 +25,7 @@
     "use-lightweight-fetch": "^2.1.1",
     "uuid": "^9.0.0",
     "vite-plugin-vue-devtools": "^7.3.5",
+    "vue-router": "^4.4.0",
     "vuedraggable": "^4.1.0",
     "vuex": "^4.1.0"
   }

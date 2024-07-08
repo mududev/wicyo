@@ -23,11 +23,12 @@ import RightSidebarEditor from '../../components/designer/editor-menu/RightSideb
 import Spinner from '../../components/loaders/Spinner.vue';
 import ComponentTopMenu from '../../components/designer/editor-menu/editables/ComponentTopMenu.vue';
 import SlideOverRight from '../../components/slidebars/SlideOverRight.vue';
+import {useRoute, useRouter} from "vue-router";
 
 const emit = defineEmits(['previewCurrentDesign']);
-
+const router = useRoute()
 const store = useStore();
-const designer = new Designer(store);
+const designer = new Designer(store, router.params.pages);
 
 const showSettingsSlideOverRight = ref(false);
 const titleSettingsSlideOverRight = ref(null);
@@ -257,7 +258,7 @@ onMounted(async () => {
   >
     <div class="relative h-full flex justify-center">
       <main
-          class="flex flex-col h-full grow rounded-2xl duration-300 m-4 max-w-screen-md"
+          class="flex flex-col h-full grow rounded-2xl duration-300 m-4 max-w-screen-lg"
       >
         <div
             class="flex items-center justify-between primary-gap rounded-t-2xl bg-myPrimaryLightGrayColor py-2 px-4"

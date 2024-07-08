@@ -1,6 +1,6 @@
 <script setup>
-import { useStore } from 'vuex';
-import Designer from './views/designer/Designer.vue';
+import {useStore} from 'vuex';
+
 
 // store
 const store = useStore();
@@ -14,7 +14,7 @@ store.commit('user/setUser', {
 </script>
 
 <template>
- <Designer></Designer>
+  <RouterView/>
 </template>
 
 <style>
