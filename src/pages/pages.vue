@@ -1,18 +1,8 @@
 <template>
-  {{ $route.params.pages }}
-  <Designer/>
+  <div class="card">
+    pages
+  </div>
 </template>
-<script>
-import Designer from './../views/designer/Designer.vue';
 
-export default {
-  name: "pages",
-  components: {Designer},
-  data() {
-    return {}
-  }
-}
+<script setup>
 </script>
-<style scoped>
-
-</style>

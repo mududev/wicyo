@@ -1,13 +1,13 @@
 <template>
-  <Header/>
-  <RouterView/>
+
 </template>
 <script>
 
 export default {
-  name: "App",
+  name: "Header",
   data() {
     return {
+
     }
   }
 }

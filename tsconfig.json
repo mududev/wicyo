@@ -1,0 +1,26 @@
+{
+  "include": [
+    "./typed-router.d.ts",
+    "./auto-imports.d.ts",
+    "./components.d.ts",
+    "./src/**/*.vue"
+  ],
+  "compilerOptions": {
+    "moduleResolution": "Bundler",
+    "types": [
+      "unplugin-vue-router/client",
+      "vite-plugin-vue-layouts/client",
+      "element-plus/global"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@": [
+        "./src"
+      ]
+    },
+    "sourceMap": false
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
